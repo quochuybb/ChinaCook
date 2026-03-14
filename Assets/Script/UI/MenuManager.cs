@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI idLobby;         
     [SerializeField] private TextMeshProUGUI playersListText; 
     [SerializeField] private TextMeshProUGUI error;
+    [SerializeField] private TMP_Dropdown mapDropdown; 
     
     [Header("Network Refs")]
     [SerializeField] private ConnectionManager connectionManager;
@@ -90,7 +91,10 @@ public class MenuManager : MonoBehaviour
         {
             if (_isHostMode)
             {
+
                 await connectionManager.StartGameNetworkAsync(localHostPlays: true);
+                MapType selectedMap = (MapType)mapDropdown.value;
+                KitchenGenerator.instance.GenerateMap(selectedMap);
                 Debug.Log("[UI] Game network started (Host).");
             }
             else

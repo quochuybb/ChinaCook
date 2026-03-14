@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: -7476115558884792394}
   - component: {fileID: -5505950582023234050}
   - component: {fileID: 3202427498481190486}
+  - component: {fileID: -6583031678244717175}
   - component: {fileID: -5119914396450922061}
   m_Layer: 0
   m_Name: Capsule
@@ -295,9 +296,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: -8433235450861540253}
   moveSpeed: 10
-  dashPower: 15
-  dashDuration: 0.25
+  dashPower: 50
+  dashDuration: 0.5
   rotationSpeed: 15
+--- !u!114 &-6583031678244717175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661971338532462862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8efda037ffcd03c58d450cbbe03025c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 2
+  counterLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  raycastOrigin: {fileID: 2990817757000039491}
 --- !u!114 &-5119914396450922061
 MonoBehaviour:
   m_ObjectHideFlags: 0
