@@ -11,17 +11,14 @@ public class BaseCounter : NetworkBehaviour
 
     private void Awake()
     {
-        // Tự động tìm MeshRenderer nếu quên kéo thả
         if (_meshRenderer == null) _meshRenderer = GetComponent<MeshRenderer>();
         
-        // Lưu lại màu gốc của viên gạch
         if (_meshRenderer != null)
         {
             _originalMaterial = _meshRenderer.material;
         }
     }
 
-    // Hàm được gọi khi Pug nhìn vào
     public void Highlight()
     {
         if (_highlightMaterial != null && _meshRenderer != null)
@@ -30,7 +27,6 @@ public class BaseCounter : NetworkBehaviour
         }
     }
 
-    // Hàm được gọi khi Pug quay mặt đi chỗ khác
     public void Unhighlight()
     {
         if (_originalMaterial != null && _meshRenderer != null)
@@ -39,8 +35,7 @@ public class BaseCounter : NetworkBehaviour
         }
     }
 
-    // Hàm này sau sẽ dùng để đặt đĩa thức ăn lên
-    public virtual void Interact()
+    public virtual void Interact(PlayerInventory inventory)
     {
         Debug.Log("Đã tương tác với quầy bếp!");
     }
