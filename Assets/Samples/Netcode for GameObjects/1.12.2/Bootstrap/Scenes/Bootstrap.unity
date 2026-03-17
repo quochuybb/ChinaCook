@@ -956,6 +956,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterPrefab: {fileID: 6032332199992655716, guid: 1f189f699cf3b1ef88d96a47eab7d986, type: 3}
+  clearPrefab: {fileID: 2332912663080415667, guid: 501f02fed162beca8a86f1a34785c551, type: 3}
+  containerPrefab: {fileID: 1319252144705796271, guid: 1605f9cc920abcfc2a0e39d5e7f3db79, type: 3}
   gridSize: 1
   width: 17
   depth: 16

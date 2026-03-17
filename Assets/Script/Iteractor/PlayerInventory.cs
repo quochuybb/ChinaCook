@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerInventory : MonoBehaviour
+public class PlayerInventory : NetworkBehaviour
 {
     [SerializeField] private Transform holdPoint;
     private KitchenObject _kitchenObject;
@@ -12,9 +13,16 @@ public class PlayerInventory : MonoBehaviour
     {
         _kitchenObject = item;
         _currentObjectInHand = itemInstance;
-        
-        _currentObjectInHand.transform.SetParent(holdPoint);
-        _currentObjectInHand.transform.localPosition = Vector3.zero;
+        if (_currentObjectInHand.TryGetComponent<NetworkObject>(out NetworkObject netObj))
+        {
+            netObj.TrySetParent(holdPoint, false);
+
+        }
+        else
+        {
+            _currentObjectInHand.transform.SetParent(holdPoint, false);
+        }
+        _currentObjectInHand.transform.localPosition = new Vector3(0f, 0.5f, 1f);
         _currentObjectInHand.transform.localRotation = Quaternion.identity;
     }
 

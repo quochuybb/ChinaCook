@@ -6,6 +6,7 @@ public class PlayerInteractor : NetworkBehaviour
     [SerializeField] private float interactDistance = 2.0f; 
     [SerializeField] private LayerMask counterLayerMask; 
     [SerializeField] private Transform raycastOrigin; 
+    [SerializeField] private PlayerInventory inventory;
 
     private BaseCounter _selectedCounter; 
 
@@ -47,7 +48,7 @@ public class PlayerInteractor : NetworkBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && _selectedCounter != null)
         {
-            Debug.Log(_selectedCounter.name);
+            _selectedCounter.Interact(inventory);
         }
     }
 
