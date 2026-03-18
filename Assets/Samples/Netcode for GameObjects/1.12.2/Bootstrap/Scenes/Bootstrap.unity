@@ -955,9 +955,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58debd987786d299d994d5227909f5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterPrefab: {fileID: 6032332199992655716, guid: 1f189f699cf3b1ef88d96a47eab7d986, type: 3}
   clearPrefab: {fileID: 2332912663080415667, guid: 501f02fed162beca8a86f1a34785c551, type: 3}
+  cuttingPrefab: {fileID: 1319252144705796271, guid: 4b50250fae95bca1d8a39e9ee288f444, type: 3}
   containerPrefab: {fileID: 1319252144705796271, guid: 1605f9cc920abcfc2a0e39d5e7f3db79, type: 3}
+  soupPrefab: {fileID: 2332912663080415667, guid: b6df3fae0640cfd9182a368e92b0608b, type: 3}
+  trashPrefab: {fileID: 2332912663080415667, guid: 81a2c05611a6821e8859044119e9196e, type: 3}
   gridSize: 1
   width: 17
   depth: 16

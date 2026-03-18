@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Chili oil
   m_EditorClassIdentifier: 
   objectName: Chili oil
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 5232005948170707861, guid: 254ffc2579e4ea2c997b46db31f7a6f7, type: 3}

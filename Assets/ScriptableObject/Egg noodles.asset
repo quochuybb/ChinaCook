@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Egg noodles
   m_EditorClassIdentifier: 
   objectName: Egg noodles
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 5232005948170707861, guid: 2bef42dc5743a253aa37686ced3c8895, type: 3}

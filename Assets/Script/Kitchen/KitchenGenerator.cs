@@ -14,9 +14,11 @@ public class KitchenGenerator : NetworkBehaviour
     public static KitchenGenerator instance;
 
     [Header("Prefabs")]
-    public GameObject counterPrefab;
     public GameObject clearPrefab;
+    public GameObject cuttingPrefab;
     public GameObject containerPrefab;
+    public GameObject soupPrefab;    
+    public GameObject trashPrefab;   
 
     [Header("Settings")]
     public float gridSize = 1f;
@@ -110,26 +112,38 @@ public class KitchenGenerator : NetworkBehaviour
             mapPositions[randomIndex] = temp;
         }
 
-        int clearCount = 0;
+        int cuttingCount = 0;
+        int soupCount = 0;
+        int trashCount = 0;
         int containerCount = 0;
 
         foreach (Vector2Int pos in mapPositions)
         {
             GameObject prefabToSpawn;
 
-            if (clearCount < 3)
+            if (cuttingCount < 2)
             {
-                prefabToSpawn = clearPrefab;
-                clearCount++;
+                prefabToSpawn = cuttingPrefab;
+                cuttingCount++;
             }
-            else if (containerCount < 2)
+            else if (soupCount < 2)
+            {
+                prefabToSpawn = soupPrefab;
+                soupCount++;
+            }
+            else if (trashCount < 1)
+            {
+                prefabToSpawn = trashPrefab;
+                trashCount++;
+            }
+            else if (containerCount < 3)
             {
                 prefabToSpawn = containerPrefab;
                 containerCount++;
             }
             else
             {
-                prefabToSpawn = counterPrefab;
+                prefabToSpawn = clearPrefab;
             }
 
             SpawnBlock(prefabToSpawn, pos.x, pos.y);

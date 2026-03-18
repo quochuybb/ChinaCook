@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pork
   m_EditorClassIdentifier: 
   objectName: Pork
-  objectPrefab: {fileID: 0}
+  objectPrefab: {fileID: 5232005948170707861, guid: cf013264680b446c8a6b66cfd0150565, type: 3}

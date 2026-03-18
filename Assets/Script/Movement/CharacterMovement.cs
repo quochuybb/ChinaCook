@@ -31,7 +31,7 @@ public class CharacterMovement : NetworkBehaviour
         
         if (rb == null) Debug.LogError("Rigidbody (3D) not found!");
         
-        rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+        rb.constraints = RigidbodyConstraints.FreezeRotation; 
     }
 
     private void Start()

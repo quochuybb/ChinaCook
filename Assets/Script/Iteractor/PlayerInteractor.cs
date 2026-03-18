@@ -50,6 +50,10 @@ public class PlayerInteractor : NetworkBehaviour
         {
             _selectedCounter.Interact(inventory);
         }
+        if (Input.GetKeyDown(KeyCode.F) && _selectedCounter != null)
+        {
+            _selectedCounter.Cut(inventory);
+        }
     }
 
     private void SetSelectedCounter(BaseCounter newCounter)

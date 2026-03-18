@@ -39,4 +39,8 @@ public class BaseCounter : NetworkBehaviour
     {
         Debug.Log("Đã tương tác với quầy bếp!");
     }
+    public virtual void Cut(PlayerInventory inventory)
+    {
+        Debug.Log("Đã tương tác với quầy bếp!");
+    }
 }

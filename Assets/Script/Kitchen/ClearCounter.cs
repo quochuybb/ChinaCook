@@ -11,7 +11,6 @@ public class ClearCounter : BaseCounter
 
     public override void Interact(PlayerInventory player)
     {
-        Debug.Log("Clear Counter");
         if (itemOnTable == null && player.HasItem())
         {
             var (droppedSO, droppedInstance) = player.DropItem();
@@ -37,4 +36,5 @@ public class ClearCounter : BaseCounter
             itemOnTableInstance = null;
         }
     }
+    
 }
