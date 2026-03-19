@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03c48b44be2242dd8524bc4820ce8e52, type: 3}
-  m_Name: Beef Cut
+  m_Script: {fileID: 11500000, guid: cf8334bf6131470a823af73341b4c1f3, type: 3}
+  m_Name: Carrot Cutting Recipe
   m_EditorClassIdentifier: 
-  objectName: Beef Cut
-  objectPrefab: {fileID: 1796711358702826357, guid: a52a6a43f47d0b2d58bd67c2d28819fc, type: 3}
+  input: {fileID: 11400000, guid: 67039222e98f9d659956afa2e64200b7, type: 2}
+  output: {fileID: 11400000, guid: 967b790f4d52717818320c5481366519, type: 2}
+  cuttingProgressMax: 5

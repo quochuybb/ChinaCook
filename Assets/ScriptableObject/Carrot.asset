@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03c48b44be2242dd8524bc4820ce8e52, type: 3}
-  m_Name: Beef Cut
+  m_Name: Carrot
   m_EditorClassIdentifier: 
-  objectName: Beef Cut
-  objectPrefab: {fileID: 1796711358702826357, guid: a52a6a43f47d0b2d58bd67c2d28819fc, type: 3}
+  objectName: Carrot
+  objectPrefab: {fileID: 5788464077196074580, guid: 98f59018dc5f0e771965d815172f8a52, type: 3}

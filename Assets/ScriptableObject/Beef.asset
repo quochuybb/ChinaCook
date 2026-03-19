@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Beef
   m_EditorClassIdentifier: 
   objectName: Beef
-  objectPrefab: {fileID: 5232005948170707861, guid: ba32e38d155517c10b1bcdde3b55d066, type: 3}
+  objectPrefab: {fileID: 125333051677321274, guid: a8798112582a7ab4b849393ea6f8c7c9, type: 3}
