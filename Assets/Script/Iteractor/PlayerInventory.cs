@@ -36,4 +36,36 @@ public class PlayerInventory : NetworkBehaviour
 
         return (droppedSO, droppedInstance);
     }
+    public KitchenObject GetCurrentItem()
+    {
+        return _kitchenObject;
+    }
+    public GameObject GetCurrentItemInHand()
+    {
+        return _currentObjectInHand;
+    }
+
+
+    public void DestroyItemInHand()
+    {
+        if (_currentObjectInHand != null)
+        {
+            if (_currentObjectInHand.TryGetComponent<NetworkObject>(out NetworkObject netObj))
+            {
+                DestroyItemServerRpc(new NetworkObjectReference(netObj));
+            }
+
+            _kitchenObject = null;
+            _currentObjectInHand = null;
+        }
+    }
+
+    [ServerRpc]
+    private void DestroyItemServerRpc(NetworkObjectReference netObjReference)
+    {
+        if (netObjReference.TryGet(out NetworkObject netObj))
+        {
+            netObj.Despawn(true);
+        }
+    }
 }

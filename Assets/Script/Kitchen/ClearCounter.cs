@@ -35,6 +35,16 @@ public class ClearCounter : BaseCounter
             itemOnTable = null;
             itemOnTableInstance = null;
         }
+        if (itemOnTable != null && player.HasItem())
+        {
+            if (itemOnTableInstance.TryGetComponent<BowlKitchenObject>(out BowlKitchenObject plate))
+            {
+                if (plate.TryAddIngredient(player.GetCurrentItem())) 
+                {
+                    player.DestroyItemInHand(); 
+                }
+            }
+        }
     }
     
 }
