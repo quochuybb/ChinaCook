@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lucky Chinese cat
+* source:	https://sketchfab.com/3d-models/lucky-chinese-cat-8335850815734fd4ac739009541ad2a5
+* author:	Ron (B-bot) (https://sketchfab.com/Official_Undertale_Last_Breath)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lucky Chinese cat" (https://sketchfab.com/3d-models/lucky-chinese-cat-8335850815734fd4ac739009541ad2a5) by Ron (B-bot) (https://sketchfab.com/Official_Undertale_Last_Breath) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
